@@ -1,0 +1,50 @@
+{
+  "nodeLayouts": {
+    "inputs": {
+      "x": 552.5,
+      "y": 42,
+      "index": -1
+    },
+    "outputs": {
+      "x": 745,
+      "y": 980,
+      "index": -1
+    },
+    "DetermineIntent": {
+      "x": 315,
+      "y": 176,
+      "index": 0
+    },
+    "ExtractIntent": {
+      "x": 490,
+      "y": 310,
+      "index": 1
+    },
+    "RetrieveDocuments": {
+      "x": 490,
+      "y": 444,
+      "index": 2
+    },
+    "FormatRetrievedDocuments": {
+      "x": 490,
+      "y": 578,
+      "index": 3
+    },
+    "FormatConversation": {
+      "x": 140,
+      "y": 578,
+      "index": 4
+    },
+    "DetermineReply": {
+      "x": 227.5,
+      "y": 712,
+      "index": 5
+    },
+    "FormatReply": {
+      "x": 227.5,
+      "y": 846,
+      "index": 6
+    }
+  },
+  "orientation": "Vertical"
+}

@@ -1,6 +1,15 @@
 # Responsible AI for Generative AI Workshop
 
-Welcome to the Responsible AI for Generative AI Workshop! This workshop is designed to demonstrate the different tooling used to support responsible AI for generative AI use cases in Azure.
+Welcome to the Responsible AI for Generative AI Workshop! This workshop is designed to demonstrate the different tooling and techniques available that enable you to build generative AI applications in Azure responsibly.  Each tutorial is designed to build up the previous one, so it is recommended to go through them in order.
+
+### reference to HARMS and mitigations.
+
+One of the approaches that we can use, to determine if our tools and techniques are effective, is to evaluate the impact of the mitigations on the model's performance.  The necessitates the use of datasets and both mathematical based metrics and AI-assisted metrics to quantitatively measure the generative AI application performance.
+
+Preqrequisites:
+
+Follow the instructions in [0-prerequisites](./0-prerequisites/README.md) to prepare your environment .
+
 
 ## Tutorials
 
