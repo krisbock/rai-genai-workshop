@@ -1,5 +1,5 @@
 import json
-from promptflow import tool
+from promptflow.core import tool
 
 @tool
 def format_retrieved_documents(docs: list, maxTokens: int) -> str:

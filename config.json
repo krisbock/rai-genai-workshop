@@ -1,5 +1,6 @@
 {
     "subscription_id": "3c8972d9-f541-46b2-b70b-d81baba3595d",
     "resource_group": "secure-ai-rg",
-    "project_name": "krbock-0635"
+    "project_name": "krbock-0635",
+    "workspace_name": "krbock-0635"
 }

@@ -2,6 +2,12 @@
 
 Welcome to the Responsible AI for Generative AI Workshop! This workshop is designed to demonstrate the different tooling and techniques available that enable you to build generative AI applications in Azure responsibly.  Each tutorial is designed to build up the previous one, so it is recommended to go through them in order.
 
+## Mitigate potential LLM harms with an iterative, layered approach
+
+Mitigating potential harms presented by these new models requires an iterative, layered approach that includes experimentation and measurement. We find that most production applications require a mitigation plan with four layers of technical mitigations: (1) the model, (2) safety system, (3) metaprompt and grounding, and (4) user experience layers. The model and safety system layers are typically platform layers, where built-in mitigations would be common across many applications. The next two layers depend on the application’s purpose and design, meaning the implementation of mitigations can vary a lot from one application to the next. Below, we’ll discuss how Azure AI can aid the use and development of each of these mitigation layers.
+
+<img src='https://techcommunity.microsoft.com/t5/image/serverpage/image-id/489954iE81C8B67BA2ECDFB' width=900 />
+
 ### reference to HARMS and mitigations.
 
 One of the approaches that we can use, to determine if our tools and techniques are effective, is to evaluate the impact of the mitigations on the model's performance.  The necessitates the use of datasets and both mathematical based metrics and AI-assisted metrics to quantitatively measure the generative AI application performance.

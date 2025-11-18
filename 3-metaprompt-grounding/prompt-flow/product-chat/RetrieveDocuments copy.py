@@ -105,7 +105,8 @@ def search_query_api(
     vectorFields=None):
     request_url = f"{endpoint}/indexes/{index_name}/docs/search?api-version={api_version}"
     request_payload = {
-        'top': top_k
+        'top': top_k,
+        'queryLanguage': 'en-us'
     }
     if query_type == 'simple':
         request_payload['search'] = query
@@ -123,8 +124,8 @@ def search_query_api(
                 embeddingModelConnection["api_version"],
                 embeddingModelName
             )
-            payload_vectors = [{"vector": query_vector, "fields": vectorFields, "k": top_k, "kind": "vector"} for query_vector in query_vectors]
-            request_payload['vectorQueries'] = payload_vectors
+            payload_vectors = [{"value": query_vector, "fields": vectorFields, "k": top_k } for query_vector in query_vectors]
+            request_payload['vectors'] = payload_vectors
 
         if query_type == 'vectorSimpleHybrid':
             request_payload['search'] = query
@@ -156,8 +157,8 @@ def search(queries: str, searchConnection: CognitiveSearchConnection, indexName:
     allOutputs = [search_query_api(
         searchConnection['api_base'], 
         searchConnection['api_key'], 
-        #"2024-05-01-preview",
-        searchConnection['api_version'], 
+        "2024-05-01-preview",
+        #searchConnection['api_version'], 
         indexName,
         queryType,
         query, 

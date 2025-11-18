@@ -1,3 +1,11 @@
 {
-  "nodes": {}
+  "nodes": {
+    "DetermineIntent": {
+      "variant_0": {
+        "inputs": {
+          "response_format": []
+        }
+      }
+    }
+  }
 }

@@ -10,7 +10,7 @@ inputs:
     is_chat_history: true
   query:
     type: string
-    default: ""
+    default: Which tent is the most waterproof?
     is_chat_input: true
 outputs:
   reply:
@@ -61,12 +61,12 @@ nodes:
   inputs:
     searchConnection: mssecureaisearch
     embeddingModelConnection: openai_connection
-    vectorFields: None
+    vectorFields: contentVector
     embeddingModelName: text-embedding-3-small
-    indexName: product-info-ais-index
+    indexName: product-info-ais-index-aoai-store
     queries: ${ExtractIntent.output.search_intents}
     queryType: vectorSemanticHybrid
-    semanticConfiguration: default
+    semanticConfiguration: azureml-default
     topK: 5
   use_variants: false
 - name: FormatRetrievedDocuments
